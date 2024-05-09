@@ -1,0 +1,93 @@
+.whiteboard {
+  display: grid;
+  height: 700px;
+  width: 700px;
+  margin: auto;
+}
+
+.cell {
+  border: 1px solid;
+  padding: 34px 43px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cell.blackhole {
+  background: radial-gradient(
+    circle,
+    rgba(2, 2, 10, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: white;
+}
+
+.cell.sun {
+  background: radial-gradient(
+    circle,
+    rgba(2, 2, 10, 1) 0%,
+    rgba(245, 230, 6, 1) 0%,
+    rgba(246, 246, 245, 1) 100%
+  );
+  color: black;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+.cell.active {
+  background-color: lightgreen;
+}
+
+.cell.clicked {
+  background-color: lightblue;
+}
+
+.vector {
+  width: 58px;
+  position: absolute;
+}
+
+.vectors-container {
+  position: relative;
+  top: -38px;
+  right: 28px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.vector.nw {
+  transform: rotate(-45deg) translate(0px, -74px);
+}
+.vector.n {
+  transform: rotate(0deg) translate(0px, -50px);
+}
+.vector.ne {
+  transform: rotate(45deg) translate(0px, -74px);
+}
+.vector.e {
+  transform: rotate(90deg) translate(0px, -50px);
+}
+.vector.se {
+  transform: rotate(135deg) translate(0px, -74px);
+}
+.vector.s {
+  transform: rotate(180deg) translate(0px, -50px);
+}
+.vector.sw {
+  transform: rotate(-135deg) translate(0px, -74px);
+}
+.vector.w {
+  transform: rotate(-90deg) translate(0px, -50px);
+}
+
+.checkboxes {
+  width: fit-content;
+  font-size: 20px;
+}

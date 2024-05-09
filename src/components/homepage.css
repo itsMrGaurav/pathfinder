@@ -1,0 +1,22 @@
+.cs_homepage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: inherit;
+}
+
+.cs_card {
+  background-color: unset;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.cs_card h5 {
+  font-size: 1.7rem;
+}
+
+.cs_card li {
+  font-size: 1.2rem;
+}
